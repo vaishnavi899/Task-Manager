@@ -1,0 +1,346 @@
+/* 🔹 Reset + Base */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1f2937;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 🔹 Layout */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 28px 20px;
+}
+
+/* 🔹 Navbar */
+.navbar {
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  padding: 16px 28px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+.navbar h2 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.navbar button {
+  background: rgba(255,255,255,0.15);
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.navbar button:hover {
+  background: rgba(255,255,255,0.25);
+}
+
+/* 🔹 Cards */
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  margin: 18px 0;
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+  transition: all 0.25s ease;
+  border: 1px solid rgba(0,0,0,0.04);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.12);
+}
+
+/* 🔹 Headings */
+h2 {
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 0 0 10px;
+  font-weight: 600;
+}
+
+/* 🔹 Stats (🔥 upgrade) */
+.stats {
+  display: flex;
+  gap: 16px;
+  margin: 18px 0 10px;
+}
+
+.stats div {
+  background: rgba(255,255,255,0.9);
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* 🔹 Buttons */
+button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: none;
+  background: linear-gradient(135deg, #6366f1, #4f46e5);
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  margin-top: 12px;
+}
+
+button:hover {
+  transform: translateY(-1px);
+  background: linear-gradient(135deg, #4f46e5, #4338ca);
+  box-shadow: 0 6px 14px rgba(79,70,229,0.3);
+}
+
+/* 🔹 Inputs */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  outline: none;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  background: #fff;
+}
+
+.input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99,102,241,0.15);
+}
+
+/* 🔹 Select dropdown */
+select {
+  cursor: pointer;
+}
+
+/* 🔹 Task Status Colors */
+.done {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.pending {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.overdue {
+  color: #dc2626;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* 🔹 Empty State */
+.empty {
+  text-align: center;
+  color: #9ca3af;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* 🔹 Login Card Center */
+.center-box {
+  max-width: 420px;
+  margin: 100px auto;
+}
+
+/* 🔹 Smooth text */
+p {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #374151;
+}
+
+/* 🔹 Small polish */
+select, input, button {
+  font-family: inherit;
+}
+
+/* 🔹 Scroll smoothness */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 🔹 Section spacing refinement */
+.card + .card {
+  margin-top: 22px;
+}
+
+/* 🔹 Better dropdown look */
+select.input {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%236366f1' height='20' viewBox='0 0 20 20' width='20' xmlns='http://www.w3.org/2000/svg'><path d='M5.25 7.5L10 12.25L14.75 7.5'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 16px;
+  padding-right: 36px;
+}
+
+/* 🔹 Task card separation */
+.task-card {
+  border-left: 4px solid #6366f1;
+}
+
+/* 🔹 Status badge style (🔥 upgrade) */
+.status-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+.status-done {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.status-pending {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status-overdue {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* 🔹 Improve empty state */
+.empty {
+  padding: 30px 0;
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+/* 🔹 Button click feedback */
+button:active {
+  transform: scale(0.96);
+}
+
+/* 🔹 Smooth card animation */
+.card {
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🔹 Mobile responsiveness */
+@media (max-width: 600px) {
+  .container {
+    padding: 16px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* 🔹 Task Card Layout Upgrade */
+.task-card {
+  position: relative;
+  padding: 18px;
+  border-radius: 16px;
+  background: white;
+  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+  transition: all 0.25s ease;
+  overflow: hidden;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+}
+
+/* 🔹 Colored left border by status */
+.task-card.done {
+  border-left: 5px solid #22c55e;
+}
+
+.task-card.pending {
+  border-left: 5px solid #f59e0b;
+}
+
+.task-card.overdue {
+  border-left: 5px solid #ef4444;
+}
+
+/* 🔹 Title */
+.task-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+/* 🔹 Description */
+.task-desc {
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+/* 🔹 Meta info */
+.task-meta {
+  font-size: 13px;
+  color: #374151;
+  margin-top: 4px;
+}
+
+/* 🔹 Status dropdown alignment */
+.task-status {
+  margin-top: 8px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+/* 🔹 Overdue highlight */
+.overdue-text {
+  color: #dc2626;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+/* 🔹 Small spacing between cards */
+.task-card + .task-card {
+  margin-top: 16px;
+}
